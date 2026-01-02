@@ -58,7 +58,7 @@ class MessageSplitter:
         return [s.strip() for s in re.split(r'[。！？；…\n]', text) if s.strip()]
 
 splitter = MessageSplitter(
-    api_key="sk-da77abc6d7ee444396d2c0ea12f710ba",
+    api_key="请在此输入你的API 密钥",        # 此部分负责AI的对话切分，你可以在此输入API key获得更强大的切分对话能力，原始提交的APIKEY 已过时
     base_url="https://api.deepseek.com", 
     model="deepseek-chat"
 )
