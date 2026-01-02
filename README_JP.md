@@ -4,7 +4,7 @@
 
 <div align="center">
   
-  # 🧠 CogniChat Server
+  #  CogniChat Server
   
   **AIにリアルな「鼓動」と「無限の記憶」を与える**
   

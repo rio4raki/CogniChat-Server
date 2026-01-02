@@ -4,7 +4,7 @@
 
 <div align="center">
   
-  # 🧠 CogniChat Server
+  #  CogniChat Server
   
   **赋予人工智能真实的“心跳”与“无限记忆”**
   
