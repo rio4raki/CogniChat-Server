@@ -122,6 +122,50 @@ CogniChatプロジェクトは、単なるコードの積み重ねではなく�
     - [x] **ハードウェア制御**: 仮想と現実を接続。現在は **XBOX コントローラー** の振動フィードバック制御に対応。
 
     ---
+## 📂 ディレクトリ構造 | Structure
+
+```text
+CogniChat-Server/
+├── assets/                 # README表示用画像リソース
+├── chroma_db_data/         # ベクトルデータベースデータ
+├── core/                   # コアコードベース
+│   ├── hardware/           # ハードウェア制御モジュール
+│   │   └── massager.py     # ハードウェアドライバロジック
+│   ├── tools/              # ツール関数セット
+│   │   ├── __init__.py
+│   │   ├── base.py         # ツール基底クラス
+│   │   ├── builtins.py     # 汎用ツール
+│   │   └── hardware.py     # ハードウェアツールラッパー
+│   ├── __init__.py
+│   ├── context_manager.py  # コンテキストマネージャ
+│   ├── gateway.py          # ゲートウェイインターフェース層
+│   ├── llm.py              # LLM呼び出し層
+│   ├── logger.py           # ログ記録モジュール
+│   ├── memory.py           # 記憶層 (RAGコア)
+│   ├── message_logger.py   # メッセージログ処理
+│   ├── prompt_engine.py    # プロンプトエンジン
+│   ├── router.py           # 意味的ルーティング
+│   ├── security.py         # セキュリティ暗号化層
+│   └── tool_registry.py    # ツールレジストリ
+├── plugins/                # プラグイン拡張
+│   └── message_splitter.py # メッセージ分割プラグイン
+├── scripts/                # スクリプトファイル
+│   ├── heartbeat.py        # ハートビートデーモン
+│   ├── inject_memory.py    # 記憶注入スクリプト
+│   ├── reset_vector_db.py  # ベクトルDBリセットスクリプト
+│   └── view_memory.py      # 記憶閲覧スクリプト
+├── tests/                  # テストケース
+│   ├── test_llm.py
+│   ├── test_memory.py
+│   ├── test_security.py
+│   └── test_tools.py
+├── .gitignore              # Git 無視設定
+├── app.py                  # メインプログラムエントリ
+├── chat_database.json      # チャット履歴データベース
+├── config.py               # プロジェクト設定ファイル
+└── inner_monologue.json    # 内部独白ログ
+```
+    ---
 ## 🏗️ 五層ニューラルアーキテクチャ | Architecture
 
 CogniChatは生物の脳の働きを模倣し、バックエンドを5つの精密に連携する論理階層に分割しています：
