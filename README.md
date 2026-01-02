@@ -76,6 +76,29 @@ CogniChat 项目并非一蹴而就的代码堆砌，而是一个逐步“点亮�
     * 虽然目前的 V3.0 版本仍有待完善，但随着硬件感知（电量、震动控制）接口的预留，它已经为未来“虚拟人”打破次元壁、真正介入用户生活留下了无限的想象空间。
 
 ---
+## 🧠 工作流程演示 | Workflow Demo
+
+> 深入观察 CogniChat 的“思维链”与“记忆体”是如何协同工作的。
+
+### 场景一：日常对话与自我思考 (Routine Chat & Self-Reflection)
+
+左侧前端的每一次输入，都会触发后端（右侧）一系列复杂的“思维链”反应，包括**心跳自省**、**语义路由判断**、**工具调用**以及**内心独白**生成。
+
+| 📱 前端视角 (Client View) | 🧠 后端视角 (Server View) |
+| :---: | :---: |
+| <img src="./assets/client_chat_flow.jpg" width="320" alt="Frontend Chat Flow"> | <img src="./assets/server_chat_flow.png" width="100%" alt="Backend Chat & Thought Process"> |
+| *用户发送消息，AI 进行多段式回复* | *后端日志展示：心跳触发 -> 内心独白 -> 路由判断 -> 工具调用* |
+
+### 场景二：记忆的形成与反馈 (Memory Formation & Feedback)
+
+当用户发出明确的记忆指令时，后端的**记忆层 (Memory Layer)** 会被激活，自动提炼关键事实并存入向量数据库。前端会实时收到“已存入记忆”的反馈标记。
+
+| 📱 前端视角 (Client View) | 🧠 后端视角 (Server View) |
+| :---: | :---: |
+| <img src="./assets/client_memory_flow.jpg" width="320" alt="Frontend Memory Feedback"> | <img src="./assets/server_memory_flow.png" width="100%" alt="Backend Memory Extraction"> |
+| *用户指令：“请记住我喜欢吃寿喜烧！”<br>系统反馈：“已存入记忆”标签* | *后端日志展示：识别记忆指令 -> 提炼事实：“用户喜欢吃寿喜烧” -> 写入向量库* |
+
+---
 ## ✨ 功能特性 | Features
 
 我们提供了一整套完善的工具链，涵盖安全、记忆、扩展性与硬件交互：
