@@ -165,7 +165,7 @@ CogniChat-Server/
 ├── config.py               # プロジェクト設定ファイル
 └── inner_monologue.json    # 内部独白ログ
 ```
-    ---
+---
 ## 🏗️ 五層ニューラルアーキテクチャ | Architecture
 
 CogniChatは生物の脳の働きを模倣し、バックエンドを5つの精密に連携する論理階層に分割しています：

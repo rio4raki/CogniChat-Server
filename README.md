@@ -164,7 +164,7 @@ CogniChat-Server/
 ├── config.py               # 项目配置文件
 └── inner_monologue.json    # 内心独白日志
 ```
-    ---
+---
 ## 🏗️ 五层神经架构 | Architecture
 
 CogniChat 模拟了生物大脑的运作机制，将后端划分为五个精密协作的逻辑层级：
